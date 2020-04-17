@@ -61,15 +61,15 @@
 
 
 /*----------------------------------------------------*/
-/*	Make sure that #header-background-image height is
-/* equal to the browser height.
+/*	Make sure that #section height is
+/* equal to the browser height on load.
 ------------------------------------------------------ */
 
-   $('header').css({ 'height': $(window).height() });
+   $('section').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
 
-        $('header').css({ 'height': $(window).height() });
-        $('body').css({ 'width': $(window).width() })
+      $('section').css({ 'height': $(window).height() });
+      $('body').css({ 'width': $(window).width() })
    });
 
 
@@ -88,7 +88,8 @@
       nav.fadeOut('fast');
       // console.log("here",h,y,$(window).outerWidth());
       // TODO home color fix here
-      $('#home ul#nav li.current a').css({'color': '#000;'});
+      // $('#home ul#nav li.current a').css({'color': '#000;'});
+      $('#home ul#nav li.current a').css({'color': 'green !important;'});
    } 
    else {
          if (y < h*.20) {
