@@ -8,10 +8,6 @@ const Started = () => {
   return (
     <section id="getStarted">
         <div className="row">
-          <div className="three columns">
-              {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
-              <img src={pic} alt="Brendan, patient kind teacher with student" />
-          </div>
           <div className="nine columns main-col">
               <h1>Getting Started</h1>
               <p>{text}</p>
@@ -20,6 +16,10 @@ const Started = () => {
                   Give me a ring
                 </div>
               </div>
+          </div>
+          <div className="three columns">
+              {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
+              <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>
         </div>
     </section>

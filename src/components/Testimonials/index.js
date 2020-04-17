@@ -8,6 +8,10 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
         <div className="row">
+          <div className="three columns">
+              {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
+              <img src={pic} alt="Brendan, patient kind teacher with student" />
+          </div>
           <div className="nine columns main-col">
               <h2>Testimonials</h2>
               <p>{text}</p>
@@ -16,10 +20,6 @@ const Testimonials = () => {
                   Give me a ring
                 </div>
               </div>
-          </div>
-          <div className="three columns">
-              {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
-              <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>
         </div>
     </section>
