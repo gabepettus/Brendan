@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Noelani",
+    "text": "ʻO ke kila kila ka ʻano hana a i ʻole ke ʻano o ka hoʻokani ʻana i ka mea kani. Kūkulu ʻia i Hawaii e Joseph Kekuku i ka hopena o ke kenekulia 19 a me ka makahiki ma mua o ke kenekulia 19, kahi kelepa pōkole i hana pinepine ʻia i kahi kila; Hōʻī ʻia nā kaula me ka lima hoʻokahi, ʻoiai e hoʻoliʻiliʻi ka lima ʻē aʻe o ke aniani o hoʻokahi a i ʻole kekahi keʻa me ka hoʻohana ʻana i ka pahu a i ʻole kaomi i kapa ʻia he kila (ua hana ʻia ka mea metala, akā, he aniani a i nā mea ʻē aʻe).",
+    "img": "uke.jpg",
+    "alt": "Uke sitting inspiringly in the sun"
+  },
+  { 
+    "id": 2,
+    "name": "Gabe", 
+    "text": "Best lessons ever, they were all better than Cats",
+    "img": "gabe.jpg",
+    "alt": "Dashing fellow who who looks like he sounds like Chet Atkins when playing guitar"
+  },
+  {
+    "id": 3,
+    "name": "Midge",
+    "text": "I used to sing alto-meow, now I sing al-TO-meee-OOooWW! All the tom-cats notice; now I get more than I can handle!", 
+    "img": "cat.jpg",
+    "alt": "Cat singing"
+  }
+]

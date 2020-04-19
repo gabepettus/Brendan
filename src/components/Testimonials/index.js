@@ -1,27 +1,31 @@
 import React from 'react';
+import { Container,Row } from 'reactstrap';
 
-// import { bio } from '../../data/bio.json';
-import pic from '../../data/images/BrendanTeaching.jpg';
+import TestimonCard from '../TestimonCard';
+import testimons  from '../../data/testimonials.json';
 
 let text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
 const Testimonials = () => {
   return (
     <section id="testimonials">
-        <div className="row">
-          <div className="three columns">
-              {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
-              <img src={pic} alt="Brendan, patient kind teacher with student" />
-          </div>
-          <div className="nine columns main-col">
+      <Container>
               <h2>Testimonials</h2>
-              <p>{text}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  Give me a ring
-                </div>
-              </div>
-          </div>
-        </div>
+              { testimons.map((testimon) => {
+                console.log("testimon",testimon);
+                return(
+                  <Row>
+
+                  <TestimonCard
+                    key={testimon.id}
+                    name={testimon.name}
+                    img={testimon.img}
+                    alt={testimon.alt}
+                    text={testimon.text}
+                  />
+                  </Row>
+                );
+              })} 
+      </Container>
     </section>
   )
 }

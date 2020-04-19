@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from '../../data/images/BrendanTeaching.jpg';
-import { lessons } from '../../data/lessons.json';
+import  lessons from '../../data/lessons.json';
 
 const Lessons = () => {
   return (
@@ -8,7 +8,9 @@ const Lessons = () => {
         <div className="row">
           <div className="nine columns main-col">
               <h1>Lessons</h1>
-              <p>{lessons}</p>
+              { lessons.map((lesson,index) => {
+                return(<p key={index}>{lesson}</p>);
+              })}
               {/* <div className="row"> <div className="columns contact-details"> Give me a ring </div> </div> */}
           </div>
           <div className="three columns">

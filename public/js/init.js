@@ -65,10 +65,18 @@
 /* equal to the browser height on load.
 ------------------------------------------------------ */
 
-   $('section').css({ 'height': $(window).height() });
+   $('section').css({ 'min-height': $(window).height() });
    $(window).on('resize', function() {
 
-      $('section').css({ 'height': $(window).height() });
+      $('section').css({ 'min-height': $(window).height() });
+      $('body').css({ 'width': $(window).width() })
+   });
+
+// set header section to also me the height of window
+   $('header').css({ 'height': $(window).height() });
+   $(window).on('resize', function() {
+
+      $('header').css({ 'height': $(window).height() });
       $('body').css({ 'width': $(window).width() })
    });
 

@@ -201,6 +201,7 @@ ul#nav li a:active { background-color: transparent !important; }
 #about {
    /* background: #2B2B2B; */
    color: #7A7A7A;
+   /* color: #fff; */
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -422,26 +423,26 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* e. testimonials Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#testimonials {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#testimonials h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #fff;
 }
 
-/* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
-.portfolio-item .item-wrap {
+/* testimonials Content */
+#testimonials-wrapper .columns { margin-bottom: 36px; }
+.testimonials-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
@@ -452,13 +453,13 @@ ul#nav li a:active { background-color: transparent !important; }
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.portfolio-item .item-wrap a {
+.testimonials-item .item-wrap a {
    display: block;
    cursor: pointer;
 }
 
 /* overlay */
-.portfolio-item .item-wrap .overlay {
+.testimonials-item .item-wrap .overlay {
    position: absolute;
    left: 0;
    top: 0;
@@ -476,7 +477,7 @@ ul#nav li a:active { background-color: transparent !important; }
 
    background: url(../images/overlay-bg.png) repeat;
 }
-.portfolio-item .item-wrap .link-icon {
+.testimonials-item .item-wrap .link-icon {
    display: block;
    color: #fff;
    height: 30px;
@@ -500,27 +501,27 @@ ul#nav li a:active { background-color: transparent !important; }
    margin-left: -15px;
    margin-top: -15px;
 }
-.portfolio-item .item-wrap img {
+.testimonials-item .item-wrap img {
    vertical-align: bottom;
 }
-.portfolio-item .portfolio-item-meta { padding: 18px }
-.portfolio-item .portfolio-item-meta h5 {
+.testimonials-item .testimonials-item-meta { padding: 18px }
+.testimonials-item .testimonials-item-meta h5 {
    font: 18px/25px 'opensans-bold', sans-serif;
    color: #fff;
 }
-.portfolio-item .portfolio-item-meta p {
+.testimonials-item .testimonials-item-meta p {
    font: 16px/22px 'opensans-light', sans-serif;
    color: #c6c7c7;
    margin-bottom: 0;
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
+.testimonials-item:hover .overlay {
 	opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
 }
-.portfolio-item:hover .link-icon {
+.testimonials-item:hover .link-icon {
    opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
@@ -593,22 +594,23 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 /* ------------------------------------------------------------------ */
-/* f. Call To Action Section
+/* f. getStarted Section
 /* ------------------------------------------------------------------ */
 
-#call-to-action {
-   background: #212121;
+#getStarted {
+   /* background: #212121; */
+   background: #4f595e;
    padding-top: 66px;
    padding-bottom: 48px;
 }
-#call-to-action h1 {
+#getStarted h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #fff;
+   color: #000;
 }
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
+#getStarted h1 span { display: none; }
+#getStarted .header-col h1:before {
    font-family: 'FontAwesome';
    content: "\f0ac";
 	padding-right: 10px;
@@ -616,35 +618,30 @@ ul#nav li a:active { background-color: transparent !important; }
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #fff;
+   color: #000;
 }
-#call-to-action .action {
+#getStarted .action {
    margin-top: 12px;
 }
-#call-to-action h2 {
+#getStarted h2 {
    font: 28px/36px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
-#call-to-action h2 a {
+#getStarted h2 a {
    color: inherit;
 }
-#call-to-action p {
-   color: #636363;
+#getStarted p {
+   /* color: #636363; */
+   color: #fff;
    font-size: 17px;
 }
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
-#call-to-action .button:hover,
-#call-to-action .button:active {
+#getStarted .button:hover,
+#getStarted .button:active {
    background: #FFFFFF;
    color: #0D0D0D;
 }
-#call-to-action p span {
+#getStarted p span {
 	font-family: 'opensans-semibold', sans-serif; 
 	color: #D8D8D8;
 }
@@ -652,7 +649,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
-
+/*
 #testimonials {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
    background-size: cover !important;
@@ -687,7 +684,6 @@ call-to-action .button {
    color: #fff;
 }
 
-/*	Blockquotes */
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
    padding-left: 0;
@@ -712,7 +708,7 @@ call-to-action .button {
 #testimonials blockquote cite:before { content: "\2014 \0020"; }
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
-
+*/
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 

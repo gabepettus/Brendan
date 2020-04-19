@@ -1,0 +1,129 @@
+.card-image {
+  height: 60px;
+  /* width: 100%; */
+}
+.view {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  /* box-shadow: 1px 1px 2px #e6e6e6; */
+  cursor: default;
+}
+
+.view .mask, .view .content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* background-color: rgba(185,201,209, 0.7);  */
+  /* background-color: rgba(209, 203, 111, 0.7); */
+  /* background-color: rgba(227, 27, 109, 0.7); */
+  background-color: rgba(184, 201,209, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+  
+.view:hover .mask { 
+  opacity: 1;
+}
+
+.view img {
+  display: block;
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.view:hover img { 
+  transform: scale(1.2);
+} 
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 10px 0 0 0;
+  transform: translateY(-100px);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #000;
+  padding: 10px 20px 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view .details {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.view:hover h2,
+.view:hover p,
+.view:hover .details {
+  opacity: 0.9;
+  transform: translateY(0px);
+}
+
+.view:hover p {
+  transition-delay: 0.1s;
+}
+
+.view:hover .details {
+  transition-delay: 0.2s;
+}
+
+
+.view .details:hover {
+    /* box-shadow: 0 0 1px #000 */
+  font-weight: bolder;
+  /* background-color: # !important; */
+  border-color: rgb(227, 27, 109) !important;
+  color: #e31b6d !important;
+  /* color: #fff !important; */
+
+  transform: scale(1.2);
+
+  /* transition: font-weight .75s; */
+  transition-property: font-weight;
+  transition-duration: .75s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+  /* transition: color .75s; */
+  transition-property: color;
+  transition-duration: .75s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+  /* transition: background-color 0.75s; */
+  transition-property: background-color;
+  transition-duration: 0.75s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}

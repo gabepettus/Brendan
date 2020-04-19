@@ -11,11 +11,7 @@ const Started = () => {
           <div className="nine columns main-col">
               <h1>Getting Started</h1>
               <p>{text}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  Give me a ring
-                </div>
-              </div>
+              {/* <div className="row"> <div className="columns contact-details"> Give me a ring </div> </div> */}
           </div>
           <div className="three columns">
               {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}

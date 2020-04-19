@@ -12,7 +12,7 @@ const About = () => {
               <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>
           <div className="nine columns main-col">
-              <h1>Brendan Bondurant</h1>
+              <h1>About</h1>
               <p>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
