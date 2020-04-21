@@ -6,7 +6,7 @@ const Lessons = () => {
   return (
     <section id="lessons">
         <div className="row">
-          <div className="nine columns main-col">
+          <div className="nine columns left-col">
               <h1>Lessons</h1>
               { lessons.map((lesson,index) => {
                 return(<p key={index}>{lesson}</p>);

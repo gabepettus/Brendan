@@ -11,13 +11,11 @@ const About = () => {
               {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
               <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>
-          <div className="nine columns main-col">
+          <div className="nine columns right-col">
               <h1>About</h1>
               <p>{bio}</p>
               <div className="row">
-                <div className="columns contact-details">
-                  Give me a ring
-                </div>
+                {/* <div className="columns contact-details"> </div> */}
               </div>
           </div>
         </div>

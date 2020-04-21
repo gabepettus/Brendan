@@ -18,6 +18,12 @@
 
 body { background: #0f0f0f; }
 
+.right-col { padding-right: 5%; }
+.left-col { padding-left: 5%; }
+
+/* .right-col { padding-right: 10%; } */
+/* .left-col { padding-left: 10%; } */
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -123,10 +129,10 @@ header .scrolldown a:hover { color: #119eb0; }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	 margin: 0;
-	 padding: 0;
-	 border: none;
-	 outline: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
 }
 
 /* nav-wrap */
@@ -142,6 +148,7 @@ header .scrolldown a:hover { color: #119eb0; }
    top: 0;
 }
 .opaque { background-color: #333; }
+.header-home-color { color: #000 !important; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -184,7 +191,7 @@ ul#nav li a:active { background-color: transparent !important; }
 
 #home ul#nav li.current a { 
    color: #b06611; 
-   color: pink;
+   /* color: pink; */
    /* color: #000;  */
 }
 
@@ -199,9 +206,10 @@ ul#nav li a:active { background-color: transparent !important; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   /* background: #2B2B2B; */
-   color: #7A7A7A;
+   background: #2B2B2B;
+   color: #7A7A7A !important;
    /* color: #fff; */
+   
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -210,14 +218,21 @@ ul#nav li a:active { background-color: transparent !important; }
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #119eb0; }
 
-#about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+#about h1 {
+   font: 40px/1.1em 'opensans-bold', sans-serif;
+   /* color: #a8a8a8; */
    color: #fff;
+   letter-spacing: -2px;
+   /* font: 22px/30px 'opensans-bold', sans-serif; */
+   /* color: #fff; */
    margin-bottom: 12px;
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   /* color: #7A7A7A; */
+   color: #eee;
+   font-size: 1.5rem;
+   text-align: justify;
    /* color: #fff; */
 }
 #about .profile-pic {
@@ -231,7 +246,7 @@ ul#nav li a:active { background-color: transparent !important; }
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+/* #about .main-col { padding-right: 5%; } */
 #about .download .button {
    margin-top: 6px;
    background: #444;
@@ -261,9 +276,25 @@ ul#nav li a:active { background-color: transparent !important; }
 #lessons a:hover, #lessons a:focus { color: #313131; }
 
 #lessons h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
+   /* font: 18px/24px 'opensans-bold', sans-serif; */
+   /* text-transform: uppercase; */
+   /* letter-spacing: 1px; */
+
+   font: 40px/1.1em 'opensans-bold', sans-serif;
+   color: #6E7881;
+   /* color: #fff; */
+   letter-spacing: -2px;
+   /* font: 22px/30px 'opensans-bold', sans-serif; */
+   /* color: #fff; */
+   margin-bottom: 12px;
+}
+#lessons p {
+   line-height: 30px;
+   color: #7A7A7A;
+   /* color: #000; */
+   font-size: 1.5rem;
+   text-align: justify;
+   /* color: #fff; */
 }
 #lessons h1 span {
    border-bottom: 3px solid #119eb0;
@@ -274,7 +305,7 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 #lessons .header-col { padding-top: 9px; }
-#lessons .main-col { padding-right: 10%; }
+/* #lessons .main-col { padding-right: 10%; } */
 
 .education, .work {
    margin-bottom: 48px;
@@ -426,18 +457,25 @@ ul#nav li a:active { background-color: transparent !important; }
 /* e. testimonials Section
 /* ------------------------------------------------------------------ */
 
+   /* color: #6E7881; */
+   /* color: #7A7A7A */
+
 #testimonials {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
 #testimonials h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   /* font: 15px/24px 'opensans-semibold', sans-serif; */
+   font: 40px/1.1em 'opensans-bold', sans-serif;
    text-transform: uppercase;
-   letter-spacing: 1px;
+   /* letter-spacing: 1px; */
+   letter-spacing: -2px;
    text-align: center;
-   margin-bottom: 48px;
-   color: #fff;
+   /* margin-bottom: 48px; */
+   margin-bottom: 12px;
+   /* color: #a8a8a8; */
+   color: #6E7881;
 }
 
 /* testimonials Content */
@@ -525,6 +563,14 @@ ul#nav li a:active { background-color: transparent !important; }
    opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
+}
+
+.card-text {
+   line-height: 30px;
+   color: #7A7A7A;
+   font-size: 1.5rem;
+   text-align: justify;
+   /* color: #fff; */
 }
 
 /* popup modal */

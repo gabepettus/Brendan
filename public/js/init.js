@@ -22,7 +22,7 @@
    $('.smoothscroll').on('click',function (e) {
 	    e.preventDefault();
 
-	    var target = this.hash,
+	    let target = this.hash,
 	    $target = $(target);
 
 	    $('html, body').stop().animate({
@@ -37,26 +37,32 @@
 /* Highlight the current section in the navigation bar
 ------------------------------------------------------*/
 
-	var sections = $("section");
-	var navigation_links = $("#nav-wrap a");
+	let sections = $("section");
+	let navigation_links = $("#nav-wrap a");
 
 	sections.waypoint({
 
       handler: function(event, direction) {
 
-		   var active_section;
+		   let active_section;
 
 			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
+         if (active_section.attr("id") === "home") { 
+            console.log("here in home");
+            $('#home ul#nav li.current a').addClass('header-home-color').fadeIn('fast');
+         } else {
+            $('#home ul#nav li.current a').removeClass('header-home-color').fadeIn('fast');
+         }
 
-			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+         if (direction === "up") active_section = active_section.prev();
+
+			let active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+         console.log("active_section", active_section.attr("id"));
 
          navigation_links.parent().removeClass("current");
 			active_link.parent().addClass("current");
-
 		},
 		offset: '35%'
-
 	});
 
 
@@ -87,9 +93,11 @@
 
    $(window).on('scroll', function() {
 
-		var h = $('header').height();
-		var y = $(window).scrollTop();
-      var nav = $('#nav-wrap');
+		let h = $('header').height();
+		let y = $(window).scrollTop();
+      let nav = $('#nav-wrap');
+      let home = $('#home ul#nav li.current a');
+            home.addClass('header-home-color').fadeIn('fast');
 
 // fade out header over "Branden text"
 	if ( (y > h*.20) && (y <= h-1) && ($(window).outerWidth() > 740 ) ) {
@@ -97,14 +105,16 @@
       // console.log("here",h,y,$(window).outerWidth());
       // TODO home color fix here
       // $('#home ul#nav li.current a').css({'color': '#000;'});
-      $('#home ul#nav li.current a').css({'color': 'green !important;'});
+      // $('li.current a').css({'color': 'green !important;'});
    } 
    else {
          if (y < h*.20) {
             nav.removeClass('opaque').fadeIn('fast');
+            home.addClass('header-home-color').fadeIn('fast');
          }
          else {
             nav.addClass('opaque').fadeIn('fast');
+            home.removeClass('header-home-color').fadeIn('fast');
          }
       }
 
@@ -154,12 +164,12 @@
 
       $('#image-loader').fadeIn();
 
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
+      let contactName = $('#contactForm #contactName').val();
+      let contactEmail = $('#contactForm #contactEmail').val();
+      let contactSubject = $('#contactForm #contactSubject').val();
+      let contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+      let data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
       $.ajax({
