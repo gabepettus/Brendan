@@ -7,6 +7,7 @@ import Lessons from './components/Lessons';
 import Testimonials from './components/Testimonials';
 import Started from './components/Started';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import data from './data/bio.json';
 
@@ -19,8 +20,9 @@ const App = () => {
       <About props={data.bio}/>
       <Lessons />
       <Testimonials />
-      <Started />
+      {/* <Started /> */}
       <Contact />
+      <Footer />
     </div>
   );
     // }

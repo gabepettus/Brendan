@@ -13,7 +13,7 @@ const Lessons = () => {
               })}
               {/* <div className="row"> <div className="columns contact-details"> Give me a ring </div> </div> */}
           </div>
-          <div className="three columns">
+          <div className="three columns showWide">
               {/* <img className="profile-pic"  src={pic} alt="Brendan, patient kind teacher with student" /> */}
               <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>

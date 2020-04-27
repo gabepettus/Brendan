@@ -15,7 +15,7 @@ import React, { Component } from 'react';
             <li><a className="smoothscroll" href="#about">About</a></li>
             <li><a className="smoothscroll" href="#lessons">Lessons</a></li>
             <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a className="smoothscroll" href="#getStarted">Get Started</a></li>
+            {/* <li><a className="smoothscroll" href="#getStarted">Get Started</a></li> */}
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
           </ul>
       </nav>
