@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef9218a4.chunk.css",
+    "main.js": "/static/js/main.63484337.chunk.js",
+    "main.js.map": "/static/js/main.63484337.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e51c10e8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e51c10e8.js.map",
+    "static/css/2.b5efd36a.chunk.css": "/static/css/2.b5efd36a.chunk.css",
+    "static/js/2.b8864277.chunk.js": "/static/js/2.b8864277.chunk.js",
+    "static/js/2.b8864277.chunk.js.map": "/static/js/2.b8864277.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b45f08c384eb7c99d5f447f28263f871.js": "/precache-manifest.b45f08c384eb7c99d5f447f28263f871.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b5efd36a.chunk.css.map": "/static/css/2.b5efd36a.chunk.css.map",
+    "static/css/main.ef9218a4.chunk.css.map": "/static/css/main.ef9218a4.chunk.css.map",
+    "static/js/2.b8864277.chunk.js.LICENSE.txt": "/static/js/2.b8864277.chunk.js.LICENSE.txt",
+    "static/media/BrendanTeaching.jpg": "/static/media/BrendanTeaching.2a5ece92.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e51c10e8.js",
+    "static/css/2.b5efd36a.chunk.css",
+    "static/js/2.b8864277.chunk.js",
+    "static/css/main.ef9218a4.chunk.css",
+    "static/js/main.63484337.chunk.js"
+  ]
+}

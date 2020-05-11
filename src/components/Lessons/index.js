@@ -1,10 +1,13 @@
 import React from 'react';
+import { Container } from 'reactstrap';
+
+import lessons from '../../data/lessons.json';
 import pic from '../../data/images/BrendanTeaching.jpg';
-import  lessons from '../../data/lessons.json';
 
 const Lessons = () => {
   return (
     <section id="lessons">
+      <Container>
         <div className="row">
           <div className="nine columns left-col">
               <h1>Lessons</h1>
@@ -18,6 +21,7 @@ const Lessons = () => {
               <img src={pic} alt="Brendan, patient kind teacher with student" />
           </div>
         </div>
+      </Container>
     </section>
   );
 }

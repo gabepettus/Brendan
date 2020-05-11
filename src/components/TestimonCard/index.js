@@ -3,12 +3,7 @@ import {
   Card,
   CardBody,
   CardText,
-  CardSubtitle,
-  CardTitle,
-  CardImg,
-  Col,
-  Container,
-  Row
+  Container
 } from 'reactstrap';
 
 import './style.css';
@@ -25,7 +20,6 @@ const TestimonCard = ( data ) => {
         <CardBody>
           <CardText className="mt-3 card-text"> "{data.text}" </CardText>
             <h4> - {data.name}</h4>
-            {/* <h3>{data.name}</h3> */}
             <h5>Student of Guitar since 1895</h5>
         </CardBody>
       </Card>

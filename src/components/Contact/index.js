@@ -4,12 +4,8 @@ import {
   Card,
   CardTitle,
   CardText,
-  Button,
-  CardImg,
   Container,
-  Row,
-  Col,
-  CardSubtitle,
+  Button,
   FormGroup,
   Label,
   Input
@@ -18,7 +14,7 @@ import axios from 'axios';
 
 import pic from '../../data/images/BrendanTeaching.jpg';
 
-let text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
+// let text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
 
 const Contact = () => {
   const [serverState, setServerState] = useState ({
@@ -55,6 +51,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <Container>
         <div className="row">
           <div className="three columns showWide">
               <img src={pic} alt="Brendan, patient kind teacher with student" />
@@ -98,6 +95,7 @@ const Contact = () => {
           </Card>
           </div>
         </div>
+      </Container>
     </section>
   );
 }
