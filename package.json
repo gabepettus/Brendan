@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "npm run start",
-    "build": "serve -s build",
+    "build": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
