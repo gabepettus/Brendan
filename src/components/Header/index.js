@@ -22,7 +22,7 @@ import React, { Component } from 'react';
 
       <div className="row banner ">
           <div className="banner-text">
-            <h1 className="responsive-headline">Branden Bondurant</h1>
+            <h1 className="responsive-headline">Brendan Bondurant</h1>
             <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>Music lessons offered in the Park Hill Neigborhood in Denver</h3>
             <hr/>
           </div>

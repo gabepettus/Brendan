@@ -79,7 +79,7 @@ const Contact = () => {
                 <Label htmlFor='message'>
                   Message:
                 </Label>
-                <Input type='textarea' id='message' name='message' placeholder='Hi Brendan my name is <name> I am interesting in taking <instrument> lessons. I have <experiance> and am particualy interested in learning <backing cookies>' />
+                <Input type='textarea' id='message' name='message' placeholder='Hi Brendan my name is <name> I am interesting in taking <instrument> lessons. I have <experiance> and am particualy interested in learning <how to rock like Bach!>' />
               </FormGroup>
               <FormGroup className='ml-5'>
                 <Button className='btn btn-lg m-2' type='submit' disabled={serverState.submitting}>
